@@ -1,4 +1,12 @@
-def add(a, b):
-    return a+b
+import numpy as np
+import pandas as pd
 
-print(add(100, 20))
+numbers = np.array([10, 20, 30, 40, 50])
+
+df = pd.DataFrame({
+    "numbers": numbers
+    })
+
+print(df)
+
+print("Mean:", df["numbers"].mean())
