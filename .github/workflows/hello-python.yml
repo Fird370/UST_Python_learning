@@ -1,6 +1,7 @@
 name: Run python
 run-name: ${{ github.actor }} is testing out GitHub Actions for python
-on: [push]
+on: 
+    pull_request:
 jobs:
   run-python:
     runs-on: ubuntu-latest
